@@ -1,0 +1,93 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables.scss';
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin-bottom: 50px;
+    }
+
+    &__form {
+      width: 80%;
+      margin-top: 50px;
+
+      &-password-strength {
+        display: none;
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: $border-radius;
+        border: 1px solid $primary;
+        background-color: rgb(228, 222, 222);
+        color: $primary;
+
+        &-status {
+          height: 10px;
+          border: 1px solid black;
+          border-radius: $border-radius;
+
+          &-filler {
+            height: 8px;
+            border-radius: $border-radius;
+
+            &.weak {
+              width: 25%;
+              background-color: $error;
+            }
+
+            &.moderate {
+              width: 50%;
+              background-color: $warn;
+            }
+
+            &.strong {
+              width: 75%;
+              background-color: $strong;
+            }
+
+            &.veryStrong {
+              width: 100%;
+              background-color: $primary;
+            }
+
+          }
+
+          &-info {
+            margin: 10px;
+
+            p {
+              margin: 0;
+              font-size: 12px;
+              color: grey;
+            }
+
+          }
+
+          &-current {
+            &-weak {
+              color: $error;
+            }
+
+            &-moderate {
+              color: $warn;
+            }
+
+            &-strong {
+              color: $strong;
+            }
+
+            &-complete {
+              color: $primary;
+            }
+          }
+
+        }
+
+      }
+
+    }
+  }

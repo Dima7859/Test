@@ -1,0 +1,19 @@
+@import './colors.scss';
+
+.header {
+  height: 10vh;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  // &__profile {
+
+  // }
+
+  h1 {
+    color: $no_bgc;
+  }
+
+}
